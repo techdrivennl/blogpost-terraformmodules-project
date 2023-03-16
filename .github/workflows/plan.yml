@@ -37,7 +37,7 @@ jobs:
     - name: Extend Git credentials
       uses: de-vri-es/setup-git-credentials@v2.0.10
       with:
-        credentials: https://x-access-token:${{ steps.get_app_token.outputs.token }}@github.com
+        credentials: https://user:${{ steps.get_app_token.outputs.token }}@github.com
 
     - name: Log in using OIDC
       uses: azure/login@v1.4.7
